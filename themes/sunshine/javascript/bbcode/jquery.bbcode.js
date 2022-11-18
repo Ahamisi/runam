@@ -1,12 +1,4 @@
-// +------------------------------------------------------------------------+
-// | @author Deen Doughouz (DoughouzForest)
-// | @author_url 1: http://www.wowonder.com
-// | @author_url 2: http://codecanyon.net/user/doughouzforest
-// | @author_email: wowondersocial@gmail.com   
-// +------------------------------------------------------------------------+
-// | WoWonder - The Ultimate Social Networking Platform
-// | Copyright (c) 2017 WoWonder. All rights reserved.
-// +------------------------------------------------------------------------+
+
 
 (function(){var d={},i;d.VERSION="0.1";i=function(e){return e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")};_render=function(e,d){var a={},f={escape:!0,newlines:!0};if(!e)return"";if(d)for(var g in d)d.hasOwnProperty(g)&&(f[g]=d[g]);f.escape&&(e=i(e));a.bold={re:/\[b\]([\s\S]*?)\[\/b\]/ig,sub:function(a,b){return"<strong>"+b+"</strong>"}};a.italic={re:/\[i\]([\s\S]*?)\[\/i\]/ig,sub:function(a,b){return"<em>"+b+"</em>"}};a.code={re:/\[code\]([\s\S]*?)\[\/code\]/ig,
 sub:function(a,b){return"<pre><code>"+b+"</code></pre>"}};a.quote={re:/\[quote\]([\s\S]*?)\[\/quote\]/ig,sub:function(a,b){return"<blockquote><p>"+b+"<p></blockquote>"}};a.quotespecific={re:/\[quote=(?:"|&quot;)(.*?)(?:"|&quot;)\]([\s\S]*?)\[\/quote\]/ig,sub:function(a,b,c){return b+" wrote: <blockquote><p>"+c+"<p></blockquote>"}};a.size={re:/\[size=(\d+)\]([\s\S]*?)\[\/size\]/ig,sub:function(a,b,c){return'<span style="font-size:'+b+'%;">'+c+"</span>"}};a.strikethrough={re:/\[s\]([\s\S]*?)\[\/s\]/ig,

@@ -60,15 +60,6 @@ if (!empty($_POST['install'])) {
 }';
       $file_content =
 '<?php
-// +------------------------------------------------------------------------+
-// | @author Deen Doughouz (DoughouzForest)
-// | @author_url 1: http://www.wowonder.com
-// | @author_url 2: http://codecanyon.net/user/doughouzforest
-// | @author_email: wowondersocial@gmail.com
-// +------------------------------------------------------------------------+
-// | WoWonder - The Ultimate PHP Social Networking Platform
-// | Copyright (c) 2016 WoWonder. All rights reserved.
-// +------------------------------------------------------------------------+
 // MySQL Hostname
 $sql_db_host = "'  . $_POST['sql_host'] . '";
 // MySQL Database User
