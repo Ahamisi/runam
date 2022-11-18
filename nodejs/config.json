@@ -1,0 +1,8 @@
+{
+    "sql_db_host": "localhost",
+    "sql_db_user": "aceman",
+    "sql_db_pass": "halfword",
+    "sql_db_name": "runam",
+    "site_url": "http://localhost:8888/runam",
+    "purchase_code": "1234567890"
+}
